@@ -2,12 +2,59 @@
 <html>
   <style>
 
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
 
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-family: system-ui, sans-serif;
+  font-size: 75%;
+  display: block;
+  margin: 0 0 0 0;
+  width: 100%;
 }
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+h2 {
+  font-family: serif;
+  font-weight: 400;
+  padding-left: 20px
+}
+
+.preview {
+  float: left;
+  width: 25%;
+  height: 300px;
+  width: 375px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Clear floats after the columns */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .preview {
+    width: 100%;
+  }
 
 
   </style>
 </html>
+
+background-image: url(/images/baku.jpg);
+background-image: url(/images/london.png);
+background-image: url(/images/madrid.jpg);
+background-image: url(/images/rome.jpg);
